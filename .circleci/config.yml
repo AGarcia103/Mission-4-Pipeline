@@ -31,9 +31,9 @@ jobs:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
 workflows:
-  test_my_app:
+  build_test_deploy:
     jobs:
-      - build_and_test
+      - build_test_deploy
       - deploy:
           requires:
             - build_and_test # only deploy if the build_and_test job has completed

@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import LoginModal from "./HomeLogin";
+import LoginModal from "./HomeLogin";
 import "./App.css";
 
 export default function Navbar2() {
@@ -56,7 +56,7 @@ export default function Navbar2() {
               <a href="/contact">Services</a>
             </li>
 
-           {/* <LoginModal /> */}
+           <LoginModal /> 
            
           </ul>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import TurnersBuySafe from "./TurnersBuySafe.png";
-//import Footer from "./HomeFooter";
+import Footer from "./HomeFooter";
 //import { FindACar } from "./components/findACar/FindACar";
 //import SearchBar from "./components/SearchBar/SearchBar.jsx";
 
@@ -233,7 +233,7 @@ function HomeContent() {
 
       {/* ---------- FOOTER ---------- */}
       <hr />
-      {/* <Footer /> */}
+      <Footer />
       <Container
         disableGutters={true}
         maxWidth={false}

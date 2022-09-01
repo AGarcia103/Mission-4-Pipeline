@@ -14,11 +14,11 @@ jobs:
       - run:
           command: npm run test
           name: Run tests
-      - snyk/scan:
-          fail-on-issues: false
       - run:
           command: npm run build
           name: Build app
+       - snyk/scan:
+          fail-on-issues: false
       - persist_to_workspace:
           root: ~/project
           paths:

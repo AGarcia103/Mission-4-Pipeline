@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.2
+  snyk: snyk/snyk@1.2.3
   heroku: circleci/heroku@1.2.6
 
 jobs:
@@ -13,6 +14,8 @@ jobs:
       - run:
           command: npm run test
           name: Run tests
+      - snyk/scan:
+          fail-on-issues: false
       - run:
           command: npm run build
           name: Build app
